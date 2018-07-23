@@ -5,7 +5,7 @@ if [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then
     echo -e "Pull Request, not pushing a build"
     exit 0;
 else
-    openssl aes-256-cbc -K $encrypted_2eeb7a4fa1ff_key -iv $encrypted_2eeb7a4fa1ff_iv -in deploy_key.enc -out deploy_key -d
+    openssl aes-256-cbc -K $encrypted_5326641bd546_key -iv $encrypted_5326641bd546_iv -in deploy_key.enc -out deploy_key -d
     chmod 600 deploy_key
     eval `ssh-agent -s`
     ssh-add deploy_key
