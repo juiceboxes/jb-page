@@ -13,7 +13,8 @@
     "build:ugly": "npm run build:sass && uglifycss dist/base.css > dist/base.min.css",
     "watch": "npm-run-all --parallel watch:*",
     "watch:sass": "npm run build:sass -- -w",
-    "watch:pug": "npm run build:pug -- -w"
+    "watch:pug": "npm run build:pug -- -w",
+    "travis:verify": "npm run build"
   },
   "repository": {
     "type": "git",
