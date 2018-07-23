@@ -16,7 +16,7 @@ if [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then
     echo -e "${PURPLE}Once this Pull Request is merged, vars will be active and will be deployed!${SET}"
     exit 0;
 else
-    echo "${GREEN}----- Generating Key -----${SET}"
+    echo -e "${GREEN}----- Generating Key -----${SET}"
     openssl aes-256-cbc -K $encrypted_5326641bd546_key -iv $encrypted_5326641bd546_iv -in deploy_key.enc -out deploy_key -d
     chmod 600 deploy_key
     eval `ssh-agent -s`
@@ -25,6 +25,6 @@ fi
 
 # If current branch is master, push to ___
 if [ "${TRAVIS_BRANCH}" = "master" ]; then
-    echo "${GREEN}----- Master Branch: Deploying to Github Pages Repo -----${SET}"
-    .travis/release.sh
+    echo -e "${GREEN}----- Master Branch: Deploying to Github Pages Repo -----${SET}"
+    bash .travis/release.sh
 fi
