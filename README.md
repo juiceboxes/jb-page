@@ -1,6 +1,6 @@
 # Juiceboxes/jb-page
 
-Source files for pages
+Source files for [juiceboxes.github.io](https://github.com/juiceboxes/juiceboxes.github.io)
 
 ## Development Scripts
 
@@ -21,3 +21,5 @@ Source files for pages
 `npm run watch:pug`: Watches `index.pug` for changes
 
 `npm run watch:sass`: Watches `base.scss` for changes
+
+`npm run travis:verify`: Runs build (will eventually lint too)
