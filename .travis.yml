@@ -12,7 +12,7 @@ install:
 script:
 - npm run travis:verify
 after_success:
-- .travis/after_success.sh
+- bash .travis/after_success.sh
 env:
   global:
   - REPO="git@github.com:juiceboxes/juiceboxes.github.io"
