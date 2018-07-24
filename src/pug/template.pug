@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+head
+
+    // –– META
+    meta(charset="utf-8")
+    title(Cardboard/title)
+    meta(name="description" content="")
+    meta(name="author" content="")
+
+    // –– FONTS
+    link(href="http://fonts.googleapis.com/css?family=Roboto:400,600,800" rel="stylesheet")
+
+    // –– CSS
+    link(rel="stylesheet" href="base.css")
+
+    link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
+    script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
+    block head_end
+
+body
+
+    .topbar
+      block topbar
+    .main
+      .center-wrapper
+        block content
+    footer.footer
+      block footer
+      .social
+        block social
+    
+    //script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+    block body_end
+

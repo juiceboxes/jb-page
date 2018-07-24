@@ -1,18 +1,13 @@
-doctype html
-html(lang="en")
-head
+extends template.pug
 
-    // –– META
-    meta(charset="utf-8")
-    title(Cardboard/title)
-    meta(name="description" content="")
-    meta(name="author" content="")
+block social
+    include partials/_social
 
-    // –– FONTS
-    link(href="http://fonts.googleapis.com/css?family=Roboto:400,600,800" rel="stylesheet")
+block topbar
+    include partials/_topbar
 
-    // –– CSS
-    link(rel="stylesheet" href="base.min.css")
+block content
+    include partials/_content
 
-body
-    div Juiceboxes!
+block footer
+    include partials/_footer

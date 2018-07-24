@@ -1,3 +1,6 @@
+// Normalize
+@import 'node_modules/@juiceboxes/cardboard/dist/normalize.min';
+
 // Import Variables
 @import 'vars/_foo';
 
@@ -5,4 +8,10 @@
 @import 'utils/_foo';
 
 // Import Partials
-@import 'partials/_foo';
+@import 'partials/_body';
+@import 'partials/_topbar';
+@import 'partials/_social';
+@import 'partials/_footer';
+
+// Import Cardboard
+@import 'node_modules/@juiceboxes/cardboard/dist/sass/cardboard.scss';
