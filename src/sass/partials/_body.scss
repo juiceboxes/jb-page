@@ -1,3 +1,5 @@
+@import 'node_modules/@juiceboxes/cardboard/dist/sass/utils/_rem';
+
 html, body, .center-wrapper, .main {
     height: 100%;
     display: flex;
@@ -29,7 +31,7 @@ html, body, .center-wrapper, .main {
   }
   
   .center-wrapper {
-    justify-content: center;
+    // justify-content: center;
   }
   
   .main {
@@ -37,3 +39,8 @@ html, body, .center-wrapper, .main {
     align-items: center;
     justify-content: center;
   }
+
+
+.card {
+  margin-top: calculateRem(25px);
+}
