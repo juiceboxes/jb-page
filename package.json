@@ -40,6 +40,6 @@
     "uglifycss": "0.0.29"
   },
   "dependencies": {
-    "@juiceboxes/cardboard": "^0.3.4"
+    "@juiceboxes/cardboard": "^0.4.0"
   }
 }

@@ -1,3 +1,7 @@
+@import 'node_modules/@juiceboxes/cardboard/dist/sass/utils/_rem';
+
+* { box-sizing: border-box; }
+
 html, body, .center-wrapper, .main {
     height: 100%;
     display: flex;
@@ -28,10 +32,8 @@ html, body, .center-wrapper, .main {
     }
   }
   
-  .center-wrapper {
-    justify-content: center;
-  }
-  
+  .card { margin-top: 20px; }
+
   .main {
     display: flex;
     align-items: center;
